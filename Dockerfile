@@ -4,7 +4,8 @@ MAINTAINER Arturo Blas <a.blas@actisec.com>
 
 RUN rabbitmq-plugins enable rabbitmq_web_stomp
 
-ADD rabbitmq.config /etc/rabbitmq/rabbitmq.config
+# rabbitmq.config.processed is output from setup_credentials.py
+ADD rabbitmq.config.processed /etc/rabbitmq/rabbitmq.config
 
 RUN service rabbitmq-server restart
 
