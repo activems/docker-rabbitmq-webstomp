@@ -4,4 +4,4 @@ set -e
 
 python setup_credentials.py
 
-docker build --rm -t rabbitmq .
+docker build --rm -t activems/rabbitmq-webstomp .
