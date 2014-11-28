@@ -4,9 +4,6 @@ MAINTAINER Arturo Blas <a.blas@actisec.com>
 
 RUN rabbitmq-plugins enable rabbitmq_web_stomp
 
-# rabbitmq.config.processed is output from setup_credentials.py
-ADD rabbitmq.config.processed /etc/rabbitmq/rabbitmq.config
-
 # Install latest Erlang
 RUN \
   wget -qO - http://packages.erlang-solutions.com/ubuntu/erlang_solutions.asc | apt-key add - && \
