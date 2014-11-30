@@ -1,7 +1,7 @@
 [
     {rabbit, [
-        {default_user, "===DEFAULT_USER==="},
-        {default_pass, "===DEFAULT_PASS==="},
+        {default_user, <<"===DEFAULT_USER===">>},
+        {default_pass, <<"===DEFAULT_PASS===">>},
         {ssl_listeners, [5671]},
         {ssl_options, [{certfile,   "/etc/rabbitmq/ssl/cert.pem"},
                        {keyfile,    "/etc/rabbitmq/ssl/key_nopass.pem"},

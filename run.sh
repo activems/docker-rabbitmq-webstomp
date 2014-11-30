@@ -16,7 +16,7 @@ echo Using webstomp pass $WEBSTOMP_PASS
 
 sed -e s/===DEFAULT_USER===/$DEFAULT_USER/g -e s/===DEFAULT_PASS===/$DEFAULT_PASS/g -e s/===WEBSTOMP_PASS===/$WEBSTOMP_PASS/g rabbitmq.config.template > rabbitmq.config
 
-docker pull ${image_name}
+#docker pull ${image_name}
 
 RUN_COMMAND="docker run -d -p 5671:5671 -p 15672:15672 -p 15671:15671 -v ${HOST_SSL}:/etc/rabbitmq/ssl -v ${HOST_LOG}:/data/log -v `pwd`/rabbitmq.config:/etc/rabbitmq/rabbitmq.config ${image_name}"
 
