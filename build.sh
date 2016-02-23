@@ -2,4 +2,4 @@
 
 set -e
 
-docker build --rm -t activems/rabbitmq-webstomp .
+docker build --rm -t mesasadc/rabbitmq-webstomp .
